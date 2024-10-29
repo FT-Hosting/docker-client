@@ -69,15 +69,19 @@ public abstract class MemoryStats {
   @AutoValue
   public abstract static class Stats {
 
+    @Nullable
     @JsonProperty("active_file")
     public abstract Long activeFile();
 
+    @Nullable
     @JsonProperty("total_active_file")
     public abstract Long totalActiveFile();
 
+    @Nullable
     @JsonProperty("inactive_file")
     public abstract Long inactiveFile();
 
+    @Nullable
     @JsonProperty("total_inactive_file")
     public abstract Long totalInactiveFile();
 
