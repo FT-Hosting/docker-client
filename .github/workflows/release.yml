@@ -25,7 +25,7 @@ jobs:
         run: mvn clean package
 
       - name: Rename jar file
-        run: mv target/*.jar target/DockerClient.jar
+        run: mv target/docker-client.8.16.1-SNAPSHOT.jar target/DockerClient.jar
 
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
